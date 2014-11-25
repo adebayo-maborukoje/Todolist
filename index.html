@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta content-type="application/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CART </title>
+<link rel="shortcut icon" href="" /> 
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body>
+    <header><p>TO DO CART</p></header>
+    <main id="main">
+    <div id="contentContainer"> 
+        <div id="taskbar">
+            <form>
+                <label for="addTask">ADD A NEW ITEM TO CHECKLIST</label></br>
+                <input type="text" size="50em" id="addItem">
+                <button id="addNewTask">ADD TASK</button>
+            </form>
+        </div>
+        <div>
+            <h2>CHECKLIST</h2>
+                <ul id="incompletedList">
+                    <li class="edit delete">
+                        <input type="checkbox" id="incompleted">
+                        <label>item 1</label>
+                   
+                        
+                    </li>
+                    <li class="edit delete">
+                        <input type="checkbox" id="incompleted">
+                        <label>item 2</label>
+                   
+                       
+                    </li>
+                </ul>
+
+            <h2>COMPLETED TASK</h2> 
+                <ul id="completedList">
+                  <li class="edit delete">
+                      <input type="checkbox" id="completed" checked>
+                      <label></label>
+                      <input type="text" class="todolist">
+                     
+                  </li>
+                  <!-- <li class="edit delete">
+                        <input type="checkbox" id="incompleted">
+                        <label>item 2</label>
+                   
+                       
+                    </li> -->
+                </ul>
+        </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div><h4>&copy 2014 BAYO MABORUKOJE</h4></div>    
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
