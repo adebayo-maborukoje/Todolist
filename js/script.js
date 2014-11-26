@@ -5,15 +5,15 @@ var cart = {
     incompleteTask: document.getElementById('incompletedList'),
     completedTask:  document.getElementById('completedList'),
                
-    validate :  function (item){
+    validate :      function (item){
 
-                if (item.trim()===""){
-                    alert('YOU NEED TO INPUT SOMETHING');
+                    if (item.trim()===""){
+                        alert('YOU NEED TO INPUT SOMETHING');
                     }
-                else {
-                    return item;
+                     else {
+                        return item;
                     }
-                },
+                     },
 
     createNewItem: function() {
               //          console.log(this.newTask.value);
