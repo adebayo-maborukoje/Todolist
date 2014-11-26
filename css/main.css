@@ -1,22 +1,30 @@
 body {
     margin:0;
     padding: 0;
-    font: 100% black;
+    font-size: 1.1em;
     background-color: #f9f9ff;
 
 }
+
 header {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     margin: 0 auto;
 }
 
-header p{
+header p {
     margin: 0 auto;
     width: 50%;
+    height: 2em;
     text-align: center;
     color:tomato;
-    border:1px solid black;
-
+    /*border:1px solid black;*/
+    font-size: 2em;
+    text-align: center;
+    background:-webkit-linear-gradient(left, lightyellow, gold, lightyellow);
+    background:-moz-linear-gradient(left, lightyellow, gold, lightyellow);
+     border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    box-shadow:  0 0 0.1em gold;
 }
 
 #main {
@@ -25,25 +33,97 @@ header p{
 }
 
 #main #contentContainer {
-    width:50%;
-    border:1px solid red;
+    width:60%;
+    /*border:1px solid red;*/
     margin: 0 auto;
     padding: 2em;
     background-color: #f8f8f8;
+}
+
+label {
+ font-size:1.4em;
+}
+
+input {
+    font-size:1.1em;
+}
+
+button {
+    width: auto;
+    height: auto;
+    max-width: 10em;
+    max-height: 10em;
+    background-color: gold;
+    background-size:cover;
+    color: white;
+    outline: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+    opacity: 0.9;
+    border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    box-shadow: inset 0 0 0.1em green;
+
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#addItem {
+    line-height: 2em;
+}
+
+#incompleteDiv {
+    background: url(../images/bg.jpg) tomato;    
+    margin-top: 2em;    
+    /*border:1px solid black;*/
+    width:45%;
+    float:left;
+    padding: 0;
+    min-height: 18em;
+    border-radius: 2em;
+   -moz-border-radius: 2em;
+}
+
+#completedDiv {
+    background: url(../images/bg4.jpg) lightblue; 
+    margin-top: 2em;     
+    /*border: 1px solid black;*/
+    width: 45%;
+    float: right; 
+    min-height: 18em;
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+}
+
+#completedDiv ul li {
+    text-decoration: line-through;
 }
 
 h2 {
     border-bottom: 2px solid black;
 }
 
+ul {
+    padding:0;
+    height:auto;
+}
+
 ul li {
     list-style-type: none;
+    padding:0;
+    /*text-align: center;*/
 }
+
 ul li:nth-child(odd) {
-    background-color: orange;
+    font-size: 1.3em;
+    background-color: #e2e2e2;
 }
+
 ul li:nth-child(even) {
-    background-color: red;
+    font-size: 1.3em;
+    background-color: #fdfdfd;
 }
 
 /***********************
@@ -69,13 +149,3 @@ footer div {
     text-align: center;
     border-radius: 1em;
 }
-
-game.hide();
-game.addButton.addEventListener('click', function() {
-    game.initialize();
-} , false);
-// guessButton.onclick = getGuess;
-game.guessButton.addEventListener ('click',function(e) {
-    e.preventDefault();
-    game.getGuess();
-}, false);

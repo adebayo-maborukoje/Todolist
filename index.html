@@ -13,56 +13,54 @@
 <body>
     <header><p>TO DO CART</p></header>
     <main id="main">
-    <div id="contentContainer"> 
-        <div id="taskbar">
-            <form>
-                <label for="addTask">ADD A NEW ITEM TO CHECKLIST</label></br>
-                <input type="text" size="50em" id="addItem">
-                <button id="addNewTask">ADD TASK</button>
-            </form>
-        </div>
-        <div>
-            <h2>CHECKLIST</h2>
-                <ul id="incompletedList">
-                    <li class="edit delete">
-                        <input type="checkbox" id="incompleted">
-                        <label>item 1</label>
-                   
-                        
-                    </li>
-                    <li class="edit delete">
-                        <input type="checkbox" id="incompleted">
-                        <label>item 2</label>
-                   
+        <div id="contentContainer"> 
+            <div id="taskbar">
+                <form>
+                    <label for="addTask">ADD A NEW ITEM TO CHECKLIST</label></br>
+                    <input type="text" size="30px" id="addItem" maxlength="35">
+                    <button id="addNewTask">ADD TASK</button>
+                </form>
+            </div>
+            <div id= "incompleteDiv">
+                <h2>CHECKLIST</h2>
+                    <ul id="incompletedList">
+                        <!-- <li class="edit delete">
+                            <input type="checkbox" id="incompleted">
+                            <label>item 1</label>
                        
-                    </li>
-                </ul>
-
-            <h2>COMPLETED TASK</h2> 
-                <ul id="completedList">
-                  <li class="edit delete">
-                      <input type="checkbox" id="completed" checked>
-                      <label></label>
-                      <input type="text" class="todolist">
-                     
-                  </li>
-                  <!-- <li class="edit delete">
-                        <input type="checkbox" id="incompleted">
-                        <label>item 2</label>
-                   
+                            
+                        </li>
+                        <li class="edit delete">
+                            <input type="checkbox" id="incompleted">
+                            <label>item 2</label>
                        
-                    </li> -->
-                </ul>
-        </div>
-
-
+                           
+                        </li> -->
+                    </ul>
+            </div>
+            <div id= "completedDiv">        
+                <h2>COMPLETED TASK</h2> 
+                    <ul id="completedList">
+                      <!-- <li class="edit delete">
+                          <input type="checkbox" id="completed" checked>
+                          <label></label>
+                          <input type="text" class="todolist">
+                         
+                      </li> -->
+                      <!-- <li class="edit delete">
+                            <input type="checkbox" id="incompleted">
+                            <label>item 2</label>
+                                               
+                        </li> -->
+                    </ul>
+            </div>
         </div>
     </main>
     <footer>
         <div><h4>&copy 2014 BAYO MABORUKOJE</h4></div>    
     </footer>
-    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
