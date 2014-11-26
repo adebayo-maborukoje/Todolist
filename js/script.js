@@ -4,7 +4,7 @@ var cart = {
     newTask    :    document.getElementById('addItem'),
     incompleteTask: document.getElementById('incompletedList'),
     completedTask:  document.getElementById('completedList'),
-      
+               
     validate :  function (item){
 
                 if (item.trim()===""){
@@ -30,12 +30,14 @@ var cart = {
 
     addItem :       function() {
                    var item = this.newTask.value;
+
                    console.log(item); 
                    if (this.validate(item)) {
                    var listItem = this.createNewItem(item);
                    this.incompleteTask.appendChild(listItem);
                    this.listItem= listItem;
                    this.bindTaskEvents(listItem, cart.taskCompleted);
+                   this.newTask.value="";
                    return this.listItem;
                    }
                       
