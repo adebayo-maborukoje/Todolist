@@ -24,7 +24,8 @@ header p {
     background:-moz-linear-gradient(left, lightyellow, gold, lightyellow);
      border-radius: 0.4em;
     -moz-border-radius: 0.4em;
-    box-shadow:  0 0 0.1em gold;
+    box-shadow:  0 0 0.1em yellow;
+    -moz-box-shadow:  0 0 0.1em yellow;
 }
 
 #main {
