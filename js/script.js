@@ -44,7 +44,6 @@ var cart = {
                     },
 
      bindTaskEvents : function (taskListItem, checkBoxEventHandler){
-        
                     var checkBox = taskListItem.querySelector("input[type=checkbox]");
                     checkBox.onclick = checkBoxEventHandler;
                     console.log(checkBox);
@@ -66,12 +65,12 @@ var cart = {
     trasverseIncomplete: function () {
                     for (var i = 0; i < cart.incompleteTask.children.length; i++) {
                     cart.bindTaskEvents(cart.incompleteTask.children[i], cart.taskCompleted);
-                        };
+                        }
 
                     },
     trasverseComplete: function(){for (var i = 0; i < cart.completedTask.children.length; i++) {
                     cart.bindTaskEvents(cart.completedTask.children[i], cart.taskIncomplete);
-                        };
+                        }
                     },
 
 
